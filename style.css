@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+   display: flex;
+}
+
+.image {
+    flex: 1;
+  
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contents {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    align-items: stretch;
+    padding: 20;
+    background-color: rgb(230, 223, 223);
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+
+}
+
+.box-top{
+    flex:1;
+    background-color: rgb(176, 174, 174);
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+}
+
+
+.box-form {    
+    flex:1;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-items: stretch;
+    align-items: baseline;
+
+}
+
+.box-bottom {
+    display: flex;
+    flex:1;
+    background-color: rgb(230, 225, 225);
+    flex-direction: column;
+    justify-items: stretch;
+    align-items: baseline
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    height: 20%;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    background-color: #3097a2;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid rgb(54, 33, 177);
+}
+
+
+
+
