@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
    display: flex;
+   min-height: 100vh;
+   min-width: 100vw;
 }
 
 .image {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
 }
 
-img {
+.image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -24,13 +31,9 @@ img {
     flex: 2;
     display: flex;
     flex-direction: column;
-    justify-items: stretch;
     align-items: stretch;
-    padding: 20;
-    background-color: rgb(230, 223, 223);
-    flex-wrap: nowrap;
-    height: 100%;
-    width: 100%;
+
+
 
 }
 
@@ -40,6 +43,7 @@ img {
     display: flex;
     font-size: large;
     flex-direction: column;
+    width: 100%;
 }
 
 
@@ -48,8 +52,9 @@ img {
     display: flex;
     background-color: white;
     flex-direction: column;
-    justify-items: stretch;
-    align-items: baseline;
+    justify-items: center;
+    width: 100;
+
 
 }
 
@@ -58,8 +63,9 @@ img {
     flex:1;
     background-color: rgb(230, 225, 225);
     flex-direction: column;
-    justify-items: stretch;
-    align-items: baseline
+    justify-items: center;
+    width: 100%;
+
 }
 
 button {
@@ -77,6 +83,7 @@ input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+
 }
 
 input:invalid {
@@ -87,6 +94,21 @@ input:valid {
   border: 2px solid rgb(54, 33, 177);
 }
 
+.box-form form {
+    width: 100%; /* <-- THIS IS ALSO CRUCIAL. Ensures the form respects its box's width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
+/* things to do
+
+1. fix the box bottom, its moved to the next column
+2. check validations - regex for all fields
+3. fix the input fields, it is all over the place
+
+
+*/
