@@ -104,8 +104,8 @@ h1 {
 }
 
 button {
-    background-color: #596D48;
-    border-color: #596D48;
+    background-color: rgba(95, 83, 174, 0.876);
+    /* border-color: #596D48; */
     border-style: hidden;
     color: white;
     cursor: pointer;
@@ -128,7 +128,7 @@ input {
 }
 
 input:invalid {
-  border: 2px solid red;
+  border: 2px solid rgb(223, 154, 129);
 }
 
 input:valid {

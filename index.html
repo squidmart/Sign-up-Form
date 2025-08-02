@@ -42,21 +42,24 @@
                             <span>FIRST NAME</span>
                             <strong><span aria-label="required">*</span></strong>
                             </label>
-                            <input type="text" id="First-Name" name="first-name" placeholder="Charlie" 
-                            minlength="1" maxlength="30">
+                            <input type="text" id="First-Name" name="first-name" placeholder="Edwina" 
+                            minlength="1" maxlength="30" required
+                            pattern="[A-Za-z]+">
                             
                             
                             <label for="Email">
                             <span>EMAIL</span>
                             <strong><span aria-label="required">*</span></strong>
                             </label>
-                            <input type="email" id="Email" name="email" placeholder="helloWorld@email.com" required>
+                            <input type="email" id="Email" name="email" placeholder="Edwina@email.com" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     
                             <label for="Password">
                             <span>PASSWORD</span>
                             <strong><span aria-label="required">*</span></strong>
                             </label>
-                            <input type="password" id="Password" name="password" required>
+                            <input type="password" id="Password" name="password" required
+                            minlength="12" maxlength="30">
                         </div>
                         
                         <div class="form-column2">      
@@ -65,21 +68,25 @@
                         <span>LAST NAME</span>
                         <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="text" id="Last-Name" name="last-name" placeholder="Smith" minlength="1" maxlength="30"required>
+                        <input type="text" id="Last-Name" name="last-name" placeholder="Persimmons" minlength="1" maxlength="30"required
+                        pattern="[A-Za-z]+">
                         
                 
                         <label for="Phone-Number">
                         <span>PHONE NUMBER</span>
                         <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="number" id="Phone" name="phone" placeholder="477432482374"" >
+                        <input type="text" id="Phone" name="phone" placeholder="477432482374"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Format: 123-456-7890"  minlength="10" maxlength="15"
+                        required >
                        
 
                         <label for="Confirm-Password">
                         <span>CONFIRM PASSWORD</span>
                         <strong><span aria-label="required">*</span></strong>
                         </label>
-                        <input type="password" id="Password" name="password" required>
+                        <input type="password" id="Password" name="password" required
+                         minlength="12" maxlength="30">
                         </div>
 
                     </div>
