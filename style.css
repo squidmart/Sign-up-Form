@@ -59,6 +59,7 @@ h1 {
     font-size: 2em;
     font-family: 'Cedarville Cursive', cursive;
     margin: 20px;
+    color: darkslateblue;
     
 }
 .box-top{
@@ -70,6 +71,7 @@ h1 {
     flex-direction: column;
     width: 100%;
     padding: 20px;
+    color: darkslateblue;
 }
 
 
@@ -82,6 +84,7 @@ h1 {
     width: 100%;
     padding-right: 30px;
     box-sizing: border-box;
+    color: rgb(118, 103, 103);
 
 
 }
@@ -95,6 +98,7 @@ h1 {
     width: 100%;
     padding: 20px;
     font: normal 1.2em 'Cedarville Cursive';
+    color: darkslateblue;
     
 
 }
@@ -159,11 +163,3 @@ label {
 
 
 
-/* things to do
-
-1. fix the box bottom, its moved to the next column
-2. check validations - regex for all fields
-3. fix the input fields, it is all over the place
-
-
-*/
