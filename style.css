@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* @font-face {
+    font-family: 'Norse';
+    src: url(Norse-Bold.otf);
+    font-weight: bold;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
 .container {
@@ -15,45 +22,65 @@ body {
 
 .image {
     flex: 1;
-    display: flex;
+    box-sizing: border-box ;
     justify-content: center;
     align-items: center;
+    position: relative;
   
 }
 
-.image img {
+.image .bird {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 20%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    opacity: .5;
 }
 
 .contents {
     flex: 2;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
 
-
-
+  
 }
 
+h1 {
+    font-size: 2em;
+
+    margin: 20px 0;
+    font-family: 'Cedarville Cursive', cursive;
+}
 .box-top{
     flex:1;
-    background-color: rgb(176, 174, 174);
+    background-color: rgb(230, 225, 225);
     display: flex;
-    font-size: large;
+    font-size: xx-large;
+    font-family: cedarville cursive;
     flex-direction: column;
     width: 100%;
+    padding: 20px;
 }
 
 
 .box-form {    
     flex:1;
     display: flex;
-    background-color: white;
+    background-color: rgba(251, 249, 249, 0.856);
     flex-direction: column;
-    justify-items: center;
-    width: 100;
+    justify-items: left;
+    width: 100%;
+    padding: 20px;
+    padding-right: 30px;
+    box-sizing: border-box;
 
 
 }
@@ -65,15 +92,19 @@ body {
     flex-direction: column;
     justify-items: center;
     width: 100%;
+    padding: 20px;
+    
 
 }
 
 button {
     background-color: #596D48;
+    border-color: #596D48;
     color: white;
     height: 20%;
     cursor: pointer;
     width: 30%;
+    margin-top: 30px;
 }
 
 button:hover {
@@ -82,6 +113,7 @@ button:hover {
 input {
     width: 100%;
     padding: 10px;
+    gap: 10px;
     box-sizing: border-box;
 
 }
@@ -94,12 +126,24 @@ input:valid {
   border: 2px solid rgb(54, 33, 177);
 }
 
-.box-form form {
-    width: 100%; /* <-- THIS IS ALSO CRUCIAL. Ensures the form respects its box's width */
+.form-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+.form-column1 {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.form-column2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 
