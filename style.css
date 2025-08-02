@@ -35,7 +35,7 @@ body {
     object-fit: cover;
 }
 
-.logo {
+/* .logo {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -43,7 +43,7 @@ body {
     height: auto;
     transform: translate(-50%, -50%);
     opacity: .5;
-}
+} */
 
 .contents {
     flex: 2;
